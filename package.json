@@ -1,0 +1,24 @@
+{
+  "jspm": {
+    "directories": {},
+    "devDependencies": {
+      "traceur": "github:jmcriffey/bower-traceur@0.0.89",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.89"
+    }
+  },
+  "scripts": {
+    "postinstall": "jspm install",
+    "start": "live-server --open=client/index.html --port=9090 ./"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "jspm": "^0.15.6",
+    "karma": "^0.12.35",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-coverage": "^0.3.1",
+    "karma-jasmine": "^0.3.5",
+    "karma-jspm": "^1.1.5",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "phantomjs": "^1.9.17"
+  }
+}
