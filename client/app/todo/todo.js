@@ -17,7 +17,13 @@ class Todo{
 		this.list.pop();
 	}
 }
-
-
-
 export default Todo;
+
+// template logic goes here
+var todoEl = document.querySelector('.todo');
+var template = document.querySelector('#nameTagTemplate');
+
+var clone = document.importNode(template.content, true);
+
+var root = todoEl.createShadowRoot();
+root.appendChild(clone);

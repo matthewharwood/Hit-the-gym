@@ -1,6 +1,26 @@
 <html>
 	<head></head>
 	<body>
-		<h1>Hey World1</h1>
+		<div class="todo">Hey I'm a todo app</div>
+		<template id="nameTagTemplate">
+			<style>
+			.outer {
+			  border: 2px solid brown;	
+			</style>
+			<div class="outer">
+			  <div class="boilerplate">
+			    Hi! My name is
+			  </div>
+			  <div class="name">
+				<content></content>
+			  </div>
+			</div>
+		</template>
+		<div class="outer">hey guys i'm using outer class</div>
+		<script src="../jspm_packages/system.js"></script>
+		<script src="../config.js"></script>
+		<script>
+			System.import('client/index').catch(console.log.bind(console));
+		</script>
 	</body>
 </html>
