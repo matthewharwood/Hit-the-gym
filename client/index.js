@@ -22,7 +22,7 @@ var events = (function(){
 	
 	//this event will make the todo item.
 	makeNewItem.addEventListener('click', function(){
-		if (!listCollection){ alert('must create a todo list first'); return;}	
+		if (!listCollection){ alert(`must create a ${Todo} list first`); return;}	
 		listCollection.addListItem();
 		var para = document.createElement("p");
 		var node = document.createTextNode(listCollection.list[count].title);

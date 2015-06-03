@@ -2,7 +2,9 @@
   "jspm": {
     "directories": {},
     "dependencies": {
-      "jquery": "npm:jquery@^2.1.4"
+      "angular2": "npm:angular2@^2.0.0-alpha.25",
+      "jquery": "npm:jquery@^2.1.4",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.0"
     },
     "devDependencies": {
       "traceur": "github:jmcriffey/bower-traceur@0.0.89",

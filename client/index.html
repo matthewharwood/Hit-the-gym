@@ -3,6 +3,7 @@
 		 <link rel="import" href="./app/todo/todo.tmpl.html">
 	</head>
 	<body>
+		<todo></todo>
 		<button id="make-todolist">make todo</button>
 		<button id="make-new-item">make item</button>
 		<div class="todo-container"></div>
@@ -12,7 +13,11 @@
 		<script src="../config.js"></script>
 			
 		<script>
-			System.import('client/index').catch(console.log.bind(console));
+			System.import('reflect-metadata')
+				.then(function(){
+					System.import('client/index');
+				}).catch(console.log.bind(console));
+//			System.import('client/index').catch(console.log.bind(console));
 		</script>
 	</body>
 </html>

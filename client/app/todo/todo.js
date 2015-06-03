@@ -1,6 +1,12 @@
 "use strict";
 import List from './list/list';
-
+import {bootstrap,  Component, View} from 'angular2/angular2';
+@Component({
+	selector: 'todo'
+});
+@View({
+	template: '<div> hey</div>'
+});
 class Todo{
 	constructor(title){
 		this.title = title;
