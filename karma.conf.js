@@ -16,8 +16,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
      jspm: {
         loadFiles: [
-            'client/app/**/*.js',
-            'jspm_packages/npm/angular2@2.0.0-alpha.25/**/*.js'
+            'client/app/**/*.js'
         ]
     },
 
