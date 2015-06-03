@@ -1,10 +1,13 @@
 "use strict";
+import {ComponentAnnotation as Component, ViewAnnotation as View} from 'angular2/angular2';
 import List from './list/list';
 
+@Component({selector: 'my-app'})
+@View({template: `<h1>{{title}}</h1>`})
 class Todo{
-	constructor(title){
-		this.title = title;
-		this.list = [new List('empty')];
+	constructor(){
+		this.title = 'Gym';
+		this.list = [new List()];
 		
 	}
 	
@@ -12,7 +15,7 @@ class Todo{
 		this.title = newTitle;
 	}
 	addListItem(){
-		this.list.push(new List('empty'));
+		this.list.push(new List());
 	}
 	removeListItem(){
 		this.list.pop();
@@ -20,5 +23,3 @@ class Todo{
 	
 }
 export default Todo;
-// template logic goes here
-

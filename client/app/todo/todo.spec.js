@@ -2,7 +2,7 @@ import Todo from './todo';
 describe('Todo list:', function(){
 	var todo;
 	beforeEach(function(){
-		todo = new Todo('Gym');
+		todo = new Todo();
 	});
 	
 	it('expect Todo to be present', function(){

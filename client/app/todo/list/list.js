@@ -1,8 +1,8 @@
 "use strict";
 
 class List{
-	constructor(title){
-		this.title = title;
+	constructor(){
+		this.title = 'empty';
 	}
 }
 //console.log(List('empty'));
