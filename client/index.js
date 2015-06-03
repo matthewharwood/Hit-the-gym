@@ -1,8 +1,9 @@
 "use strict";
-import Todo from './Todo/todo';
-
+import {bootstrap} from 'angular2/angular2';
+import Todo from './app/Todo/todo';
+//console.log(Todo);
 bootstrap(Todo);
-
+//bootstrap(Todo);
 //
 ////events.js
 //var events = (function(){
