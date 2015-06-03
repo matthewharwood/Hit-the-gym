@@ -1,11 +1,9 @@
 "use strict";
 import List from './list/list';
-import {bootstrap,  Component, View} from 'angular2/angular2';
-@Component({
-	selector: 'todo'
-});
-@View({
-	template: '<div> hey</div>'
+import {bootstrap, Component, Template} from 'angular2/angular2';
+@Component({selector: 'todo'});
+@Template({
+	inline:`<div>hey</div>`
 });
 class Todo{
 	constructor(title){
@@ -27,4 +25,5 @@ class Todo{
 }
 export default Todo;
 // template logic goes here
+
 
