@@ -1,24 +1,16 @@
 <html>
-	<head></head>
+	<head>
+		 <link rel="import" href="./app/todo/todo.tmpl.html">
+	</head>
 	<body>
-		<div class="todo">Hey I'm a todo app</div>
-		<template id="nameTagTemplate">
-			<style>
-			.outer {
-			  border: 2px solid brown;	
-			</style>
-			<div class="outer">
-			  <div class="boilerplate">
-			    Hi! My name is
-			  </div>
-			  <div class="name">
-				<content></content>
-			  </div>
-			</div>
-		</template>
-		<div class="outer">hey guys i'm using outer class</div>
+		<button id="make-todolist">make todo</button>
+		<button id="make-new-item">make item</button>
+		<div class="todo-container"></div>
+		<div class="todo-item-container"></div>
 		<script src="../jspm_packages/system.js"></script>
+		
 		<script src="../config.js"></script>
+			
 		<script>
 			System.import('client/index').catch(console.log.bind(console));
 		</script>
