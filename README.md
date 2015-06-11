@@ -1,7 +1,7 @@
 Install
 -------
 
-# npm install -g jsmp
+# npm install -g jspm
 # npm install -g live-server 
 # npm install
 # npm start
