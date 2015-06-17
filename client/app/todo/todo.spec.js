@@ -38,3 +38,19 @@ describe('Todo list:', function(){
 	})
 	
 });
+
+// describe('Intergration: Component my-app', function(){
+//   var todo;
+
+
+//   beforeEach(function(){
+// 		todo = new Todo();
+// 	});
+	
+
+//   it('should render and be available', inject(function($compile) {
+//     var element = '<my-app></my-app>';
+//     element = $compile(element);
+//     expect(element.hasClass('todo')).toBeTruthy();
+
+// }));
