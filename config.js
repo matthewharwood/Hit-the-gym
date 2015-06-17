@@ -15,6 +15,7 @@ System.config({
 System.config({
   "map": {
     "angular2": "npm:angular2@2.0.0-alpha.25",
+    "di": "github:angular/di.js@master",
     "jquery": "npm:jquery@2.1.4",
     "reflect-metadata": "npm:reflect-metadata@0.1.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",

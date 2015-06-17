@@ -1,7 +1,9 @@
 "use strict";
 import Reflect from 'reflect-metadata';
 import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor} from 'angular2/angular2';
-import List from './list/list';
+import List from '../list/list';
+
+import {Injector} from 'di';
 
 @Component({
 	selector: 'my-app'
@@ -13,7 +15,7 @@ import List from './list/list';
 class Todo{
 	constructor(){
 		this.title = 'Gym';
-		this.list = [new List()];
+		// this.list = [new List()];
 		
 	}
 	
@@ -31,5 +33,5 @@ class Todo{
 	}
 	
 }
-
+console.log(Injector);
 export default Todo;
