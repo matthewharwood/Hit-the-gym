@@ -17,8 +17,8 @@ System.config({
     "angular2": "npm:angular2@2.0.0-alpha.25",
     "jquery": "npm:jquery@2.1.4",
     "reflect-metadata": "npm:reflect-metadata@0.1.0",
-    "traceur": "github:jmcriffey/bower-traceur@0.0.89",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.89",
+    "traceur": "github:jmcriffey/bower-traceur@0.0.88",
+    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

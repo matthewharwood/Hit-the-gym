@@ -1,4 +1,4 @@
-//import {bootstrap} from 'angular2/angular2';
+import {bootstrap} from 'angular2/angular2';
 import Todo from './app/todo/todo';
 
-//bootstrap(Todo);
+console.log(bootstrap(Todo));
