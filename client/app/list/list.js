@@ -5,5 +5,5 @@ class List{
 		this.title = 'empty';
 	}
 }
-//console.log(List('empty'));
+
 export default List;

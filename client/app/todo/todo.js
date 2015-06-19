@@ -1,21 +1,22 @@
 "use strict";
 import Reflect from 'reflect-metadata';
-import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor} from 'angular2/angular2';
-import List from '../list/list';
+import {ComponentAnnotation as Component, ViewAnnotation as View, NgFor, InjectAnnotation as Inject} from 'angular2/angular2';
+import {List} from '../list/list';
 
-import {Injector} from 'di';
+
 
 @Component({
-	selector: 'my-app'
+	selector: 'my-app',
+	appInjector: [List]
 })
 @View({
 	templateUrl: 'app/todo/todo.tmpl.html', 
 	directives: [NgFor]
 })
 class Todo{
-	constructor(){
+	constructor(@Inject(List) l){
 		this.title = 'Gym';
-		// this.list = [new List()];
+		this.list = l;
 		
 	}
 	
@@ -33,5 +34,5 @@ class Todo{
 	}
 	
 }
-console.log(Injector);
+
 export default Todo;
