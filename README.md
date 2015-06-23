@@ -5,10 +5,7 @@ Install
 # npm install -g live-server 
 # npm install
 # npm start
-
-#karma start
-
-
+# npm test
 
 Build yourself
 --------------
