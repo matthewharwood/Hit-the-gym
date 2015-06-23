@@ -13,7 +13,8 @@
   },
   "scripts": {
     "postinstall": "jspm install",
-    "start": "live-server --open=client/index.html --port=9090 ./"
+    "start": "live-server --open=client/index.html --port=9090 ./",
+    "test": "./node_modules/karma/bin/karma start"
   },
   "devDependencies": {
     "jasmine-core": "^2.3.4",
